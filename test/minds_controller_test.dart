@@ -1,5 +1,5 @@
-import 'package:dio/dio.dart';
-import 'package:mockito/annotations.dart';
+import 'package:minds_sdk/minds_sdk.dart';
 
-@GenerateMocks([Dio])
-void main() {}
+void main() {
+  final sdk = MindsClient(apiKey: "");
+}
