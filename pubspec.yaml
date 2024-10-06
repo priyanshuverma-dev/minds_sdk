@@ -1,7 +1,16 @@
 name: minds_sdk
-description: "A new Flutter package project."
+description: "The official Dart client for Minds AI, a service for building AI applications."
 version: 0.0.1
 homepage:
+
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
 
 environment:
   sdk: ^3.5.3
@@ -11,11 +20,13 @@ dependencies:
   dio: ^5.7.0
   flutter:
     sdk: flutter
+  logging: ^1.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  test: ^1.25.7
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

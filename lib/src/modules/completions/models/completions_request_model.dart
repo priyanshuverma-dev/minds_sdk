@@ -1,3 +1,5 @@
+import 'package:minds_sdk/src/modules/completions/models/completions_message_model.dart';
+
 class CompletionsRequestModel {
   final String model;
   final List<Message> messages;
@@ -24,30 +26,6 @@ class CompletionsRequestModel {
       'model': model,
       'messages': messages.map((message) => message.toJson()).toList(),
       'stream': stream,
-    };
-  }
-}
-
-class Message {
-  final String role;
-  final String content;
-
-  Message({
-    required this.role,
-    required this.content,
-  });
-
-  factory Message.fromJson(Map<String, dynamic> json) {
-    return Message(
-      role: json['role'],
-      content: json['content'],
-    );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'role': role,
-      'content': content,
     };
   }
 }

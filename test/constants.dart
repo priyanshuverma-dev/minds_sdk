@@ -1,4 +1,4 @@
-import 'package:minds_sdk/modules/datasources/models/datasource_model.dart';
+import 'package:minds_sdk/src/modules/datasources/models/datasource_model.dart';
 
 class TestConstants {
   static const String mindsName = "testingMinds";
